@@ -44,8 +44,6 @@ function conection(status) {
   }
 }
 
-
-
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
@@ -198,7 +196,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   let arrayTablaDelSeis = [];
-  for (i = 0; i < 11; i++) {
+  for (let i = 0; i < 11; i++) {
     arrayTablaDelSeis.push(6 * i);
   }
   return arrayTablaDelSeis;
@@ -217,8 +215,8 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   let i = 0
   do {
-    i = i + 1
-     numero = numero + 5
+    i += 1
+     numero += 5
   }
   while (i < 8);
   return numero;
